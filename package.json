@@ -7,7 +7,8 @@
     "test": "jest test",
     "test:watch": "jest test --watch",
     "test:coverage": "jest test --coverage",
-    "clean": "rm -rf dist/**/*.js",
+    "clean": "rm -rf dist/*",
+    "compile": "yarn tsc",
     "build": "npm run clean && webpack",
     "start": "npm run clean && webpack-dev-server --open",
     "lint": "eslint src/",
@@ -44,6 +45,8 @@
     "webpack-dev-server": "^3.9.0"
   },
   "dependencies": {
+    "@types/react": "^16.9.16",
+    "@types/react-dom": "^16.9.4",
     "fetch-retry": "^2.2.3",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",

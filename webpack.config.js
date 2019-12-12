@@ -3,11 +3,11 @@ const path = require('path')
 module.exports = {
   mode: 'development',
   entry: {
-    app: './src/index.js'
+    app: './src/index.tsx'
   },
   devtool: 'inline-source-map',
   devServer: {
-    contentBase: './dist',
+    contentBase: './../dist',
   },
   module: {
     rules: [
@@ -42,5 +42,8 @@ module.exports = {
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist')
+  },
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js']
   }
 }
