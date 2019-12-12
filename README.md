@@ -1,39 +1,16 @@
-# Finding Falcone
+# Typescript, Jest, Webpack, React, CSS Modules
+## `yarn compile`
 
-Hi! Thanks for your time in considering this coding challenge. What follows are instructions on how to get the app running and some detailed documentation about bits and pieces.
+Compiles the project with `tsc` as if it was a Typescript based node project
 
-## Setup
+## `yarn build`
 
-```bash
-nvm use
-npm install
-npm start # this will start webpack dev server
-```
+Compiles the project with `webpack` as if it was a React based typescript project
 
-### Details about configuration
+## `yarn test`
 
-This project uses
-* **Webpack**, for asset building
-* **Webpack Dev Server**, for development
-* **Jest**, for tests
-* **CSS Modules**, for static styles
-* **React**, as a JS framework
-* **fetch-retry**, for network reliability
-* **eslint**, for linting
-* **babel**, for transformation of es6+
-* **chai**, for assertions
-* **postcss**, for css modules & `composes` syntax
-* **nvm**, for node version control
+Runs the tests with Jest
 
-## Details about the implementation
-### State management
-I chose to not use Redux and use hooks, custom hooks and the context API provided by React. I find this provides simplier state management infrastructure than Redux.
+### `expect` from `chai`
 
-### Tests
-Look, I know I didn't write many tests. By the end of this coding challenge I have already put quite a lot of hours into this (10+). I'm comfortable with tests, and happy to prove this in further interview rounds if needed.
-
-### Network reliability
-`fetch-retry` is used to handle network based failures and automatically retry when they occure.
-
-# Demo
-Please see the `finding_falcone.gif` in this project for a demo
+I've included `expect` from chai since it provides a nicer expectation API than jests
